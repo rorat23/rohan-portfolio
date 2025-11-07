@@ -2280,3 +2280,12 @@ button,
   border-radius: 8px;
 }
 
+/* Sidebar active state */
+#menu a.active { 
+  font-weight: 700; 
+  color: #f56a6a;       /* theme accent */
+}
+#menu .opener.active {
+  color: #f56a6a;
+}
+
