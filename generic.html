@@ -7,6 +7,32 @@
     <meta name="description" content="Experience — Amazon GenAI analytics, Swiggy Bolt launch, Trust & Safety, KMK pharma analytics.">
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const here = location.pathname.split('/').pop() || 'index.html';
+      const hash = location.hash;
+
+      const links = document.querySelectorAll('#menu a');
+      links.forEach(a => {
+        const samePage = (a.getAttribute('href') || '').split('#')[0] === here;
+        const sameHash = a.hash && a.hash === hash;
+
+        // mark active: same page and (no hash OR matching hash)
+        if (samePage && (!a.hash || sameHash)) {
+          a.classList.add('active');
+
+          // open parent submenu if any (HTML5 UP toggles 'active' on the .opener)
+          const opener = a.closest('ul')?.previousElementSibling;
+          if (opener && opener.classList.contains('opener')) {
+            opener.classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
+  
+
   <body class="is-preload">
 
     <!-- Wrapper -->
@@ -21,7 +47,7 @@
             <a href="index.html" class="logo"><strong>Rohan Poddar</strong> · Experience</a>
             <ul class="icons">
               <li><a href="https://linkedin.com/in/rohan-poddar/" class="icon brands fa-linkedin" target="_blank" rel="noreferrer noopener"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://github.com/rorat23" class="icon brands fa-github" target="_blank" rel="noreferrer noopener"><span class="label">GitHub</span></a></li>
+              <li><a href="https://github.com/yourgithub" class="icon brands fa-github" target="_blank" rel="noreferrer noopener"><span class="label">GitHub</span></a></li>
               <li><a href="mailto:rohanratna23@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
             </ul>
           </header>
@@ -181,14 +207,32 @@
             </header>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="generic.html#amazon">Amazon</a></li>
-              <li><a href="generic.html#bolt">Swiggy — Bolt</a></li>
-              <li><a href="generic.html#tns">Swiggy — Trust & Safety</a></li>
-              <li><a href="generic.html#kmk">KMK Consulting</a></li>
-              <li><a href="generic.html#ghb">Case Study: Grocery Heartbeat</a></li>
-              <li><a href="generic.html#fraud">Case Study: Fraud Precision</a></li>
+
+              <li>
+                <span class="opener">Experience</span>
+                <ul>
+                  <li><a href="generic.html#amazon">Amazon</a></li>
+                  <li><a href="generic.html#bolt">Swiggy — Bolt</a></li>
+                  <li><a href="generic.html#tns">Swiggy — Trust & Safety</a></li>
+                  <li><a href="generic.html#kmk">KMK Consulting</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="opener">Projects</span>
+                <ul>
+                  <li><a href="generic.html#ghb">Grocery Heartbeat (GenAI)</a></li>
+                  <li><a href="generic.html#fraud">Fraud Precision Framework</a></li>
+                  <li><a href="generic.html#pricing">Pricing & Parity Analytics</a></li>
+                </ul>
+              </li>
+
+              <li><a href="index.html#projects">Featured Work</a></li>
+              <li><a href="elements.html">Components</a></li>
+              <li><a href="mailto:rohanratna23@gmail.com">Contact</a></li>
             </ul>
           </nav>
+
 
           <!-- Contact -->
           <section>
@@ -203,9 +247,10 @@
 
           <!-- Footer -->
           <footer id="footer">
-            <p class="copyright" style="text-align:center; font-size: 0.9em;">© Rohan Poddar</p>
+            <p class="copyright">
+              &copy; Rohan Poddar. Template: <a href="https://html5up.net">HTML5 UP</a>.
+            </p>
           </footer>
-
 
         </div>
       </div>
