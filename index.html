@@ -1,303 +1,166 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Rohan Poddar — Data Scientist</title>
+    <title>Rohan Poddar - Data Scientist</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Rohan Poddar — Data Scientist & Analytics Engineer. GenAI insights at Amazon, launched Swiggy Bolt, fraud & growth analytics.">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="Rohan Poddar - Data Scientist II focused on ML systems, experimentation, GenAI workflows, marketplace analytics, and growth.">
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
   </head>
 
-  <script>
-    // keep sidebar consistent and highlight current link
-    document.addEventListener('DOMContentLoaded', function () {
-      const here = location.pathname.split('/').pop() || 'index.html';
-      const hash = location.hash;
+  <body class="portfolio-site">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Rohan Poddar home">
+        <span class="brand-mark">RP</span>
+        <span>Rohan Poddar</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="generic.html">Experience</a>
+        <a href="elements.html">Resume</a>
+        <a href="mailto:rohanratna23@gmail.com">Contact</a>
+      </nav>
+    </header>
 
-      const links = document.querySelectorAll('#menu a');
-      links.forEach(a => {
-        const samePage = (a.getAttribute('href') || '').split('#')[0] === here;
-        const sameHash = a.hash && a.hash === hash;
-        if (samePage && (!a.hash || sameHash)) {
-          a.classList.add('active');
-          const opener = a.closest('ul')?.previousElementSibling;
-          if (opener && opener.classList.contains('opener')) opener.classList.add('active');
-        }
-      });
-    });
-  </script>
-
-  <body class="is-preload">
-    <div id="wrapper">
-
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-
-          <!-- Header -->
-          <header id="header">
-            <a href="index.html" class="logo"><strong>Rohan Poddar</strong> · Data Scientist</a>
-            <ul class="icons">
-              <li><a href="https://linkedin.com/in/rohan-poddar/" class="icon brands fa-linkedin" target="_blank" rel="noreferrer noopener"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://github.com/rorat23" class="icon brands fa-github" target="_blank" rel="noreferrer noopener"><span class="label">GitHub</span></a></li>
-              <li><a href="mailto:rohanratna23@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-              <li><a href="https://topmate.io/rohan_poddar" class="icon solid fa-calendar-check" target="_blank" rel="noreferrer noopener"><span class="label">Topmate</span></a></li>
-            </ul>
-          </header>
-
-          <!-- Hero -->
-          <section id="banner">
-            <div class="content">
-              <header>
-                <h1>Hi, I’m Rohan</h1>
-                <p>Data Scientist who turns noisy data into direction.</p>
-              </header>
-
-              <p>
-                I build analytics systems that help teams move faster and think smarter. At <strong>Amazon</strong>, I led
-                <em>GenAI-powered insight tools</em> and unified grocery metrics across Fresh, Whole Foods Market and Sub-Same-Day delivery —
-                bringing clarity to one of the world’s largest retail ecosystems.
-              </p>
-
-              <p>
-                Earlier at <strong>Swiggy</strong>, I was on the core team that <strong>launched Bolt</strong> — the world’s first
-                <em>10-minute food-delivery platform</em> — blending speed, data and design to reimagine convenience.
-              </p>
-
-              <p>
-                My work lives where <strong>science meets storytelling</strong>: models that explain the <em>why</em> and visuals that drive the
-                <em>so what</em>.
-              </p>
-
-              <ul class="actions">
-                <li><a href="#experience" class="button big primary">Explore Work</a></li>
-                <li><a href="Rohan%20Poddar%20-%20Resume.pdf" class="button big icon solid fa-file-alt" target="_blank" rel="noreferrer noopener">Resume</a></li>
-                <li><a href="https://topmate.io/rohan_poddar" class="button big icon solid fa-calendar-check" target="_blank" rel="noreferrer noopener">Book a 1:1</a></li>
-              </ul>
-            </div>
-            <span class="image object">
-              <img src="images/my-image.jpg" alt="Rohan Poddar portrait" />
-            </span>
-          </section>
-
-          <!-- Experience -->
-          <section id="experience">
-            <header class="major">
-              <h2>Experience</h2>
-            </header>
-
-            <div class="features">
-              <article>
-                <span class="icon solid major fa-chart-line accent1"></span>
-                <div class="content">
-                  <h3>Amazon — Data Systems at Scale</h3>
-                  <p>
-                    Implemented the global analytics foundation for Grocery; unified topline & ops metrics — improving leadership decision accuracy by <strong>~15%</strong>.
-                    Built <strong>Grocery Heartbeat</strong> (GenAI insights) cutting manual analysis by <strong>60%</strong> across 5+ teams; led marketing analytics (+<strong>3%</strong> conversion).
-                  </p>
-                  <ul class="actions"><li><a href="generic.html#amazon" class="button small">Learn more</a></li></ul>
-                </div>
-              </article>
-
-              <article>
-                <span class="icon solid major fa-bolt accent2"></span>
-                <div class="content">
-                  <h3>Swiggy — Bolt (10-Minute Delivery)</h3>
-                  <p>
-                    Core team for <strong>Bolt</strong>; led supply analytics and zone readiness. Drove +<strong>2%</strong> M2O conversion →
-                    <strong>+1.8K</strong> incremental orders/day; GTM for Swiggy Grow (captured <strong>10%</strong> GMV; <strong>15K</strong> iOPD).
-                  </p>
-                  <ul class="actions"><li><a href="generic.html#bolt" class="button small">Learn more</a></li></ul>
-                </div>
-              </article>
-
-              <article>
-                <span class="icon solid major fa-shield-alt accent3"></span>
-                <div class="content">
-                  <h3>Swiggy — Trust & Safety</h3>
-                  <p>
-                    Uplifted fraud-rule precision from 75%→<strong>90%</strong>, automating escalation and saving <strong>500+ hrs/month</strong>.
-                    Cut false positives by <strong>25–30%</strong> without hurting CX; fixed ATO refund abuse; refined NTP tagging.
-                  </p>
-                  <ul class="actions"><li><a href="generic.html#tns" class="button small">Learn more</a></li></ul>
-                </div>
-              </article>
-
-              <article>
-                <span class="icon solid major fa-database accent4"></span>
-                <div class="content">
-                  <h3>KMK Consulting — Pharma Analytics</h3>
-                  <p>
-                    Built IC/SFO models and forecasting; delivered <strong>~10%</strong> higher sales, shaved <strong>20%</strong> query latency and <strong>30%</strong> reporting time via pipeline optimizations.
-                  </p>
-                  <ul class="actions"><li><a href="generic.html#kmk" class="button small">Learn more</a></li></ul>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <!-- Featured Projects -->
-          <section id="projects">
-            <header class="major"><h2>Featured Projects</h2></header>
-
-            <div class="posts">
-              <!-- Pro 1 -->
-              <article>
-                <a href="generic.html#ghb" class="image"><img src="images/ghb.jpg" alt="Grocery Heartbeat GenAI thumbnail" /></a>
-                <h3>Grocery Heartbeat (GenAI)</h3>
-                <p>Natural-language insights for biz users; reduced manual analysis by <strong>60%</strong>. Stack: LLM prompt orchestration, Snowflake layer, Databricks jobs, QuickSight.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#ghb" class="button">Case Study</a></li>
-                </ul>
-              </article>
-
-              <!-- Pro 2 -->
-              <article>
-                <a href="generic.html#fraud" class="image"><img src="images/fraud.jpg" alt="Fraud precision framework thumbnail" /></a>
-                <h3>Fraud Precision Framework</h3>
-                <p>Rule cuts + monitoring to reach <strong>90%</strong> precision; <strong>500+ hrs/month</strong> saved. Methods: deciles, uplift, cohort back-tests, drift monitoring.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#fraud" class="button">Case Study</a></li>
-                </ul>
-              </article>
-
-              <!-- Pro 3 -->
-              <article>
-                <a href="generic.html#bolt" class="image"><img src="images/Bolt.png" alt="Swiggy Bolt analytics thumbnail" /></a>
-                <h3>Bolt Analytics (10-Minute Delivery)</h3>
-                <p>Zone-readiness modelling (rider density, prep-time, throughput) & batching policies; +<strong>2%</strong> M2O → <strong>+1.8K</strong> iOPD.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#bolt" class="button">Read More</a></li>
-                </ul>
-              </article>
-
-              <!-- Pro 4 -->
-              <article>
-                <a href="generic.html#pricing" class="image"><img src="images/pricing.jpg" alt="Pricing & parity analytics thumbnail" /></a>
-                <h3>Pricing & Parity Analytics</h3>
-                <p>SKU-level parity across banners/competitors; improved consistency and protected margins with automated ETL (Databricks → Snowflake/Redshift).</p>
-                <ul class="actions">
-                  <li><a href="generic.html#pricing" class="button">Read More</a></li>
-                </ul>
-              </article>
-
-              <!-- Personal 1 -->
-              <article>
-                <a href="generic.html#face" class="image"><img src="images/Snapchat_Filter.png" alt="Face recognition project thumbnail" /></a>
-                <h3>Face Recognition & Snapchat Filters</h3>
-                <p>OpenCV video capture; training as NumPy <code>Name.npy</code> files; HaarCascade for face/nose; KNN for name prediction.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#face" class="button">Details</a></li>
-                  <!-- <li><a href="https://github.com/yourgithub/face-recognition" class="button primary" target="_blank" rel="noreferrer noopener">Code</a></li> -->
-                </ul>
-              </article>
-
-              <!-- Personal 2 -->
-              <article>
-                <a href="generic.html#stock" class="image"><img src="images/Portfolio_Analysis.png" alt="Stock portfolio dashboard thumbnail" /></a>
-                <h3>Stock Market Portfolio Analysis</h3>
-                <p>Exploratory analysis + interactive Tableau dashboard for performance insights and drill-downs.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#stock" class="button">Details</a></li>
-                  <!-- <li><a href="https://public.tableau.com/views/..." class="button primary" target="_blank" rel="noreferrer noopener">Live Dashboard</a></li> -->
-                </ul>
-              </article>
-
-              <!-- Personal 3 -->
-              <article>
-                <a href="generic.html#learning" class="image"><img src="https://www.mindtickle.com/wp-content/uploads/2024/12/MT_Logo.png" alt="Product analytics thumbnail" /></a>
-                <h3>Product Analysis for a Learning Platform</h3>
-                <p>Analyzed user engagement & performance; built KPI dashboard for feature tracking and adoption.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#learning" class="button">Details</a></li>
-                  <!-- <li><a href="https://github.com/yourgithub/learning-analytics" class="button primary" target="_blank" rel="noreferrer noopener">Code</a></li> -->
-                </ul>
-              </article>
-            </div>
-          </section>
-
+    <main>
+      <section class="hero hero-with-portrait">
+        <img class="hero-portrait" src="images/my-image.jpg" alt="Rohan Poddar portrait" />
+        <div class="hero-content">
+          <p class="eyebrow">Data Scientist II / ML, GenAI, Experimentation</p>
+          <h1>Rohan Poddar</h1>
+          <p class="hero-copy">
+            I build decision systems that turn messy business questions into measurable action: uplift targeting,
+            customer signals, experimentation, marketplace optimization, and trustworthy executive reporting.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="generic.html">Explore Experience</a>
+            <a class="button" href="Rohan%20Poddar%20-%20Resume.pdf" target="_blank" rel="noreferrer noopener">Download Resume</a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
-
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="get" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
-
-          <!-- Menu (consistent across pages) -->
-          <nav id="menu">
-            <header class="major"><h2>Menu</h2></header>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li>
-                <span class="opener">Experience</span>
-                <ul>
-                  <li><a href="generic.html#amazon">Amazon</a></li>
-                  <li><a href="generic.html#bolt">Swiggy — Bolt</a></li>
-                  <li><a href="generic.html#tns">Swiggy — Trust & Safety</a></li>
-                  <li><a href="generic.html#kmk">KMK Consulting</a></li>
-                </ul>
-              </li>
-              <li>
-                <span class="opener">Projects</span>
-                <ul>
-                  <li><a href="generic.html#ghb">Grocery Heartbeat (GenAI)</a></li>
-                  <li><a href="generic.html#fraud">Fraud Precision Framework</a></li>
-                  <li><a href="generic.html#pricing">Pricing & Parity Analytics</a></li>
-                  <li><a href="generic.html#face">Face Recognition</a></li>
-                  <li><a href="generic.html#stock">Stock Portfolio Dashboard</a></li>
-                  <li><a href="generic.html#learning">Learning Platform Analytics</a></li>
-                </ul>
-              </li>
-              <li><a href="index.html#projects">Featured Work</a></li>
-              <li><a href="elements.html">Components</a></li>
-              <li><a href="mailto:rohanratna23@gmail.com">Contact</a></li>
-            </ul>
-          </nav>
-
-          <!-- Sidebar teaser -->
-          <section>
-            <header class="major"><h2>Latest</h2></header>
-            <div class="mini-posts">
-              <article>
-                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                <p>Secured 5th place globally in Amazon Hackathon 2025 (72 teams; 16 finalists).</p>
-              </article>
-            </div>
-          </section>
-
-          <!-- Contact -->
-          <section>
-            <header class="major"><h2>Get in touch</h2></header>
-            <ul class="contact">
-              <li class="icon solid fa-envelope"><a href="mailto:rohanratna23@gmail.com">rohanratna23@gmail.com</a></li>
-              <li class="icon solid fa-phone"><a href="tel:+918278658366">+91 82786 58366</a></li>
-              <li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/rohan-poddar/" target="_blank" rel="noreferrer noopener">linkedin.com/in/rohan-poddar/</a></li>
-              <li class="icon solid fa-map-marker-alt">Bengaluru, India</li>
-            </ul>
-          </section>
-
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">© Rohan Poddar</p>
-          </footer>
-
+      <section class="metric-band" aria-label="Selected outcomes">
+        <div>
+          <strong>+26%</strong>
+          <span>Campaign ROAS</span>
         </div>
-      </div>
+        <div>
+          <strong>+25.4 pp</strong>
+          <span>Bolt SLA Adherence</span>
+        </div>
+        <div>
+          <strong>90%</strong>
+          <span>Fraud Precision</span>
+        </div>
+        <div>
+          <strong>500+ hrs</strong>
+          <span>Monthly Effort Saved</span>
+        </div>
+      </section>
 
-    </div>
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Current Focus</p>
+          <h2>Building ML products inside high-scale operations</h2>
+        </div>
+        <div class="two-column">
+          <p>
+            At Amazon, I work on ML and GenAI systems for Grocery, including targeted discounting, metadata quality,
+            autonomous modeling workflows, feature-store signals, and cart-recovery experiments.
+          </p>
+          <p>
+            Before that, I led analytics at Swiggy across Bolt, growth, availability, and Trust & Safety, where the work
+            had to be fast, measurable, and safe enough for real operational decisions.
+          </p>
+        </div>
+      </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Career Spine</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Aug 2025 - Present</span>
+            <h3>Amazon / Data Scientist II</h3>
+            <p>ML targeting, GenAI workflows, customer inference layers, and experimentation for Amazon Grocery.</p>
+          </article>
+          <article>
+            <span>May 2023 - Aug 2025</span>
+            <h3>Swiggy / Manager Analytics</h3>
+            <p>Bolt optimization, growth planning, availability analytics, and Trust & Safety systems.</p>
+          </article>
+          <article>
+            <span>Sep 2021 - May 2023</span>
+            <h3>KMK Consulting / Data Analyst</h3>
+            <p>Pharma analytics across incentive compensation, forecasting, territory planning, and reporting automation.</p>
+          </article>
+          <article>
+            <span>Apr 2021 - Sep 2021</span>
+            <h3>Lyxel and Flamingo / Ecommerce Executive</h3>
+            <p>Amazon and Flipkart PPC optimization, segmentation, bidding, and ROAS tracking.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell impact-section" id="impact">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio Highlights</p>
+          <h2>Selected work across ML, growth, and operations</h2>
+        </div>
+        <div class="impact-grid">
+          <article>
+            <img src="images/ghb.jpg" alt="Abstract ML network visualization" />
+            <h3>Targeted Discounting</h3>
+            <p>Causal targeting framework that improved promotional efficiency while reducing low-return discounting.</p>
+            <a href="generic.html#discounting">Impact Snapshot</a>
+          </article>
+          <article>
+            <img src="images/Bolt.png" alt="Swiggy Bolt visual" />
+            <h3>Bolt Optimization</h3>
+            <p>Marketplace readiness work that improved delivery SLA adherence and operating efficiency.</p>
+            <a href="generic.html#swiggy">Experience Detail</a>
+          </article>
+          <article>
+            <img src="images/fraud.jpg" alt="Fraud analytics visual" />
+            <h3>Fraud Precision</h3>
+            <p>Abuse-prevention analytics that improved precision while reducing manual review effort.</p>
+            <a href="generic.html#fraud">Impact Snapshot</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Toolkit</p>
+          <h2>FAANG-ready data science stack</h2>
+        </div>
+        <div class="skill-cloud">
+          <span>Python</span><span>Advanced SQL</span><span>PySpark</span><span>Statistical Modeling</span>
+          <span>Machine Learning</span><span>Causal Inference</span><span>Experimentation</span><span>A/B Testing</span>
+          <span>Hypothesis Testing</span><span>Feature Engineering</span><span>Model Validation</span><span>Product Analytics</span>
+          <span>Marketplace Analytics</span><span>Personalization</span><span>Uplift Modeling</span><span>Forecasting</span>
+          <span>GenAI Applications</span><span>LLM Evaluation</span><span>Prompt Engineering</span><span>Workflow Orchestration</span>
+          <span>AWS</span><span>SageMaker</span><span>Snowflake</span><span>Redshift</span><span>Tableau</span><span>QuickSight</span>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div>
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Open to sharp data problems and thoughtful conversations.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:rohanratna23@gmail.com">Email Me</a>
+          <a class="button" href="https://linkedin.com/in/rohan-poddar/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; Rohan Poddar</span>
+      <span>Bengaluru, India</span>
+    </footer>
   </body>
 </html>

@@ -1,268 +1,153 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Experience — Rohan Poddar</title>
+    <title>Experience - Rohan Poddar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Experience — Amazon GenAI analytics, Swiggy Bolt launch, Trust & Safety, KMK pharma analytics.">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="Experience and portfolio highlights for Rohan Poddar, Data Scientist II.">
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
   </head>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const here = location.pathname.split('/').pop() || 'index.html';
-      const hash = location.hash;
+  <body class="portfolio-site">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Rohan Poddar home">
+        <span class="brand-mark">RP</span>
+        <span>Rohan Poddar</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="generic.html">Experience</a>
+        <a href="elements.html">Resume</a>
+        <a href="mailto:rohanratna23@gmail.com">Contact</a>
+      </nav>
+    </header>
 
-      const links = document.querySelectorAll('#menu a');
-      links.forEach(a => {
-        const samePage = (a.getAttribute('href') || '').split('#')[0] === here;
-        const sameHash = a.hash && a.hash === hash;
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Experience & Impact</p>
+          <h1>Systems, experiments, and analytics that move operating decisions.</h1>
+          <p>
+            This page keeps public details intentionally high level. It shows the business problem, scope, and measured
+            outcomes without exposing internal data, product mechanics, fraud logic, or implementation recipes.
+          </p>
+        </div>
+        <img src="images/ghb.jpg" alt="Abstract neural network visualization for analytics and machine learning" />
+      </section>
 
-        // mark active: same page and (no hash OR matching hash)
-        if (samePage && (!a.hash || sameHash)) {
-          a.classList.add('active');
-
-          // open parent submenu if any (HTML5 UP toggles 'active' on the .opener)
-          const opener = a.closest('ul')?.previousElementSibling;
-          if (opener && opener.classList.contains('opener')) {
-            opener.classList.add('active');
-          }
-        }
-      });
-    });
-  </script>
-  
-
-  <body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-
-          <!-- Header -->
-          <header id="header">
-            <a href="index.html" class="logo"><strong>Rohan Poddar</strong> · Experience</a>
-            <ul class="icons">
-              <li><a href="https://linkedin.com/in/rohan-poddar/" class="icon brands fa-linkedin" target="_blank" rel="noreferrer noopener"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://github.com/rorat23" class="icon brands fa-github" target="_blank" rel="noreferrer noopener"><span class="label">GitHub</span></a></li>
-              <li><a href="mailto:rohanratna23@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-              <li><a href="https://topmate.io/rohan_poddar" class="icon solid fa-calendar-check" target="_blank" rel="noreferrer noopener"><span class="label">Topmate</span></a></li>
-            </ul>
-          </header>
-
-          <!-- Cover -->
-          <section>
-            <header class="main">
-              <h1>Experience</h1>
-              <p class="tagline" style="text-transform: uppercase; letter-spacing: 1px; color:#888; margin:0.5rem 0 0;">
-                Amazon · Swiggy · KMK
+      <section class="section-shell">
+        <div class="role-list">
+          <article id="amazon" class="role-card">
+            <div class="role-meta">
+              <span>Aug 2025 - Present</span>
+              <strong>Amazon</strong>
+            </div>
+            <div class="role-body">
+              <h2>Data Scientist II</h2>
+              <p>
+                Building ML, GenAI, and experimentation systems for Amazon Grocery across targeting, metadata quality,
+                customer inference, and conversion recovery.
               </p>
-            </header>
-            <span class="image main"><img src="images/pic11.jpg" alt="Experience cover" /></span>
-          </section>
+              <ul>
+                <li>Designed LTV-uplift targeting for discount campaigns, improving ROAS by <strong>26%</strong> and reducing low-return promo spend by <strong>~60%</strong>.</li>
+                <li>Launched LLM-based metadata quality scoring adopted as a leadership tech metric with a <strong>90%+</strong> target.</li>
+                <li>Built autonomous modeling workflows that reduced development cycles from weeks to days through automated feature engineering.</li>
+                <li>Built customer inference signals for personalization and targeting use cases.</li>
+                <li>Led cart-recovery experiments that lifted conversion by <strong>3-5%</strong>.</li>
+                <li>Mentored <strong>2</strong> Data Science interns on validation and production-readiness standards.</li>
+              </ul>
+            </div>
+          </article>
 
-          <!-- Amazon -->
-          <section id="amazon">
-            <header class="major">
-              <h2><span class="icon solid fa-chart-line" style="margin-right:.4rem;"></span>Amazon — Business Intelligence Engineer II</h2>
-              <p style="margin-top:.25rem; color:#888;">Aug 2025 – Present</p>
-            </header>
+          <article id="swiggy" class="role-card">
+            <div class="role-meta">
+              <span>May 2023 - Aug 2025</span>
+              <strong>Swiggy</strong>
+            </div>
+            <div class="role-body">
+              <h2>Manager Analytics</h2>
+              <p>
+                Led analytics across Bolt, growth planning, availability, order conversion, and Trust & Safety.
+              </p>
+              <ul>
+                <li>Led demand-supply optimization for Swiggy Bolt, improving SLA adherence by <strong>25.4 pp</strong> while reducing cost per delivery by <strong>24%</strong>.</li>
+                <li>Improved Menu-to-Order conversion by <strong>2%</strong>, adding <strong>1.8K</strong> incremental orders/day.</li>
+                <li>Spearheaded Swiggy Grow GTM analytics, capturing <strong>10%</strong> GMV and generating <strong>15K</strong> iOPD.</li>
+                <li>Improved availability by <strong>10%</strong>, reduced search failures by <strong>0.8%</strong>, and drove <strong>5K</strong> incremental orders/day.</li>
+                <li>Improved fraud precision from <strong>75%</strong> to <strong>90%</strong>, saving <strong>500+</strong> man-hours/month.</li>
+              </ul>
+            </div>
+          </article>
 
-            <p>
-              I build data systems that power decision-making across <em>Amazon Grocery</em> (Fresh, WFM, SSD). I led <strong>GenAI-powered insight tools</strong> and unified topline/profitability metrics used by leadership and ops teams.
-            </p>
+          <article id="kmk" class="role-card">
+            <div class="role-meta">
+              <span>Sep 2021 - May 2023</span>
+              <strong>KMK Consulting Inc.</strong>
+            </div>
+            <div class="role-body">
+              <h2>Data Analyst</h2>
+              <p>Delivered pharma analytics across incentive design, forecasting, territory planning, and reporting automation.</p>
+              <ul>
+                <li>Developed IC and SFO models that improved sales efficiency by <strong>10%</strong>.</li>
+                <li>Forecasted sales and HCP engagement for quarterly planning and territory design.</li>
+                <li>Reduced query latency by <strong>20%</strong> and reporting time by <strong>30%</strong>.</li>
+              </ul>
+            </div>
+          </article>
 
-            <ul>
-              <li>Designed the global analytics foundation for Grocery; standardized revenue/margin KPIs — improved decision accuracy by <strong>15–25%</strong>.</li>
-              <li>Led <strong>Grocery Heartbeat</strong>, a natural-language insights platform — reduced manual analysis by <strong>60%</strong> across 5+ teams.</li>
-              <li>Partnered with DE to automate ETL on <strong>Databricks + Snowflake + Redshift</strong> — <strong>40%</strong> lower latency and fresher data.</li>
-              <li>Owned pricing analytics (SKU parity across banners/competitors) — improved consistency and protected margins.</li>
-              <li>Placed <strong>5th</strong> globally in Amazon 2025 Hackathon (72 teams, 16 finalists).</li>
-            </ul>
-
-            <ul class="actions">
-              <li><a href="#ghb" class="button small">See: Grocery Heartbeat</a></li>
-            </ul>
-          </section>
-
-          <hr class="major" />
-
-          <!-- Swiggy Bolt -->
-          <section id="bolt">
-            <header class="major">
-              <h2><span class="icon solid fa-bolt" style="margin-right:.4rem;"></span>Swiggy — Bolt (10-minute food delivery)</h2>
-              <p style="margin-top:.25rem; color:#888;">Core Team · 2023 – 2025</p>
-            </header>
-
-            <p>
-              Part of the core team that <strong>launched Bolt</strong>, the world’s first 10-minute food-delivery platform. I drove supply-side analytics to make sub-10-minute SLAs viable at scale.
-            </p>
-
-            <ul>
-              <li>Built zone-level readiness models (rider density, prep-time, kitchen throughput, peak-hour variance).</li>
-              <li>Optimized dispatch & batching policies; improved M2O conversion by <strong>2%</strong> → <strong>1.8K</strong> incremental orders/day.</li>
-              <li>GTM analytics for <strong>Swiggy Grow</strong> — captured <strong>10% GMV</strong> exclusively; added <strong>15K</strong> OPD in 3 months.</li>
-              <li>Availability & unorderable search insights — +<strong>10%</strong> availability, −<strong>0.8%</strong> slurp; +<strong>5K</strong> iOPD.</li>
-            </ul>
-          </section>
-
-          <hr class="major" />
-
-          <!-- Trust & Safety -->
-          <section id="tns">
-            <header class="major">
-              <h2><span class="icon solid fa-shield-alt" style="margin-right:.4rem;"></span>Swiggy — Trust & Safety (Instamart)</h2>
-              <p style="margin-top:.25rem; color:#888;">Manager – Analytics · 2023 – 2025</p>
-            </header>
-
-            <p>
-              Built fraud-detection analytics and rules to protect CX while controlling abuse and cost.
-            </p>
-
-            <ul>
-              <li>Increased fraud rule precision from 75% → <strong>90%</strong>; automated high-risk escalations — saved <strong>500+ hrs/month</strong>.</li>
-              <li>Rule cuts for E-comm & FnV abuse patterns — reduced false positives by <strong>25%</strong> without CX hit.</li>
-              <li>Closed 2FA/denial gaps; stopped ₹<strong>1.2 L+</strong> ATO refund abuse; improved identity-fraud defenses.</li>
-              <li>Retuned NTP tagging — <strong>−30%</strong> false tags; improved new-user CSAT.</li>
-            </ul>
-
-            <ul class="actions">
-              <li><a href="#fraud" class="button small">See: Fraud Precision Framework</a></li>
-            </ul>
-          </section>
-
-          <hr class="major" />
-
-          <!-- KMK -->
-          <section id="kmk">
-            <header class="major">
-              <h2><span class="icon solid fa-database" style="margin-right:.4rem;"></span>KMK Consulting — Data Analyst</h2>
-              <p style="margin-top:.25rem; color:#888;">Sep 2021 – May 2023</p>
-            </header>
-
-            <p>
-              Built analytics foundations for US pharma clients — incentive design, forecasting, and performance reporting.
-            </p>
-
-            <ul>
-              <li>IC & SFO models aligned to multichannel engagement — contributed to <strong>+10%</strong> sales lift.</li>
-              <li>Forecasting (Python/SQL) for quarterly planning and territory optimization.</li>
-              <li>Rep performance dashboards (Tableau) for call efficiency and IC effectiveness.</li>
-              <li>Optimized Snowflake/Tableau pipelines — <strong>−20%</strong> query latency; <strong>−30%</strong> reporting time.</li>
-            </ul>
-          </section>
-
-          <!-- Case Studies (optional deep dives) -->
-          <hr class="major" />
-
-          <section id="ghb">
-            <header class="major">
-              <h2><span class="icon solid fa-robot" style="margin-right:.4rem;"></span>Case Study — Grocery Heartbeat (GenAI)</h2>
-            </header>
-            <p>
-              A natural-language analytics interface enabling business users to ask questions (“sales last week”,
-              “what drove conversion dip?”) and receive visual + narrative answers.
-            </p>
-            <ul>
-              <li>Tech: LLM prompt-orchestration, semantic layer over Snowflake, Databricks jobs, Quicksight viz.</li>
-              <li>Impact: <strong>60%</strong> reduction in manual analysis time; faster WBR/MBR prep.</li>
-            </ul>
-          </section>
-
-          <hr class="major" />
-
-          <section id="fraud">
-            <header class="major">
-              <h2><span class="icon solid fa-user-shield" style="margin-right:.4rem;"></span>Case Study — Fraud Precision Framework</h2>
-            </header>
-            <p>
-              Precision/recall-balanced rule design with monitoring for drift, abuse patterns, and cost-to-serve trade-offs.
-            </p>
-            <ul>
-              <li>Methods: threshold tuning, decile analysis, uplift checks, cohort back-testing.</li>
-              <li>Impact: <strong>90%</strong> precision at medium risk; <strong>500+ hrs/month</strong> saved.</li>
-            </ul>
-          </section>
-
+          <article id="lyxel" class="role-card">
+            <div class="role-meta">
+              <span>Apr 2021 - Sep 2021</span>
+              <strong>Lyxel and Flamingo</strong>
+            </div>
+            <div class="role-body">
+              <h2>Ecommerce Executive</h2>
+              <p>Managed Amazon and Flipkart PPC campaigns with a focus on bidding, segmentation, and ROAS discipline.</p>
+              <ul>
+                <li>Delivered <strong>14.5%</strong> month-over-month ROI growth through targeted bidding and segmentation.</li>
+              </ul>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
-
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="get" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
-
-          <!-- Menu -->
-          <nav id="menu">
-            <header class="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-
-              <li>
-                <span class="opener">Experience</span>
-                <ul>
-                  <li><a href="generic.html#amazon">Amazon</a></li>
-                  <li><a href="generic.html#bolt">Swiggy — Bolt</a></li>
-                  <li><a href="generic.html#tns">Swiggy — Trust & Safety</a></li>
-                  <li><a href="generic.html#kmk">KMK Consulting</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <span class="opener">Projects</span>
-                <ul>
-                  <li><a href="generic.html#ghb">Grocery Heartbeat (GenAI)</a></li>
-                  <li><a href="generic.html#fraud">Fraud Precision Framework</a></li>
-                  <li><a href="generic.html#pricing">Pricing & Parity Analytics</a></li>
-                </ul>
-              </li>
-
-              <li><a href="index.html#projects">Featured Work</a></li>
-              <li><a href="elements.html">Components</a></li>
-              <li><a href="mailto:rohanratna23@gmail.com">Contact</a></li>
-            </ul>
-          </nav>
-
-
-          <!-- Contact -->
-          <section>
-            <header class="major"><h2>Get in touch</h2></header>
-            <ul class="contact">
-              <li class="icon solid fa-envelope"><a href="mailto:rohanratna23@gmail.com">rohanratna23@gmail.com</a></li>
-              <li class="icon solid fa-phone"><a href="tel:+918278658366">+91 82786 58366</a></li>
-              <li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/rohan-poddar/" target="_blank" rel="noreferrer noopener">linkedin.com/in/rohan-poddar/</a></li>
-              <li class="icon solid fa-map-marker-alt">Bengaluru, India</li>
-            </ul>
-          </section>
-
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">
-              &copy; Rohan Poddar. Template: <a href="https://html5up.net">HTML5 UP</a>.
-            </p>
-          </footer>
-
+      <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio Highlights</p>
+          <h2>Selected work, summarized for a public portfolio</h2>
         </div>
-      </div>
+        <div class="snapshot-list">
+          <article id="discounting">
+            <h3>Targeted Discounting & LTV Uplift</h3>
+            <p>
+              Built a causal targeting framework to make promotional spend more efficient while reducing investment in
+              low-return audiences. Public details focus on measurement and impact rather than model internals.
+            </p>
+            <strong>Impact: +26% ROAS, ~60% lower low-return promo spend</strong>
+          </article>
+          <article id="fraud">
+            <h3>Fraud Precision Framework</h3>
+            <p>
+              Improved abuse-detection precision while reducing manual review load and preserving customer experience.
+              Sensitive implementation details are intentionally excluded from the public portfolio.
+            </p>
+            <strong>Impact: 90% precision, 500+ monthly hours saved</strong>
+          </article>
+          <article id="pricing">
+            <h3>Pricing & Parity Analytics</h3>
+            <p>
+              Built pricing governance analytics to improve visibility into parity issues, protect margins, and help
+              teams review exceptions faster.
+            </p>
+            <strong>Impact: cleaner governance and faster exception review</strong>
+          </article>
+        </div>
+      </section>
+    </main>
 
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer class="site-footer">
+      <span>&copy; Rohan Poddar</span>
+      <a href="Rohan%20Poddar%20-%20Resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
+    </footer>
   </body>
 </html>

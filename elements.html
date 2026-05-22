@@ -1,277 +1,87 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Components — Rohan Poddar</title>
+    <title>Resume - Rohan Poddar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Reusable components for Rohan Poddar’s portfolio (cards, timeline, badges, CTAs).">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="Resume summary, skills, education, awards, and contact links for Rohan Poddar.">
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
   </head>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const here = location.pathname.split('/').pop() || 'index.html';
-      const hash = location.hash;
+  <body class="portfolio-site">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Rohan Poddar home">
+        <span class="brand-mark">RP</span>
+        <span>Rohan Poddar</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="generic.html">Experience</a>
+        <a href="elements.html">Resume</a>
+        <a href="mailto:rohanratna23@gmail.com">Contact</a>
+      </nav>
+    </header>
 
-      const links = document.querySelectorAll('#menu a');
-      links.forEach(a => {
-        const samePage = (a.getAttribute('href') || '').split('#')[0] === here;
-        const sameHash = a.hash && a.hash === hash;
-
-        // mark active: same page and (no hash OR matching hash)
-        if (samePage && (!a.hash || sameHash)) {
-          a.classList.add('active');
-
-          // open parent submenu if any (HTML5 UP toggles 'active' on the .opener)
-          const opener = a.closest('ul')?.previousElementSibling;
-          if (opener && opener.classList.contains('opener')) {
-            opener.classList.add('active');
-          }
-        }
-      });
-    });
-  </script>
-
-
-  <body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-
-          <!-- Header -->
-          <header id="header">
-            <a href="index.html" class="logo"><strong>Rohan Poddar</strong> · Components</a>
-            <ul class="icons">
-              <li><a href="https://linkedin.com/in/rohan-poddar/" class="icon brands fa-linkedin" target="_blank" rel="noreferrer noopener"><span class="label">LinkedIn</span></a></li>
-              <li><a href="https://github.com/rorat23" class="icon brands fa-github" target="_blank" rel="noreferrer noopener"><span class="label">GitHub</span></a></li>
-              <li><a href="mailto:rohanratna23@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-              <li><a href="https://topmate.io/rohan_poddar" class="icon solid fa-calendar-check" target="_blank" rel="noreferrer noopener"><span class="label">Topmate</span></a></li>
-            </ul>
-          </header>
-
-          <!-- Components Library -->
-          <section>
-            <header class="main">
-              <h1>Components</h1>
-              <p class="tagline" style="text-transform: uppercase; letter-spacing: 1px; color:#888; margin:.25rem 0 0;">
-                Copy & paste blocks into any page
-              </p>
-            </header>
-
-            <!-- Project Card -->
-            <hr class="major" />
-            <h2 id="project-card">Project Card</h2>
-            <div class="posts">
-              <article>
-                <a href="generic.html#ghb" class="image"><img src="images/pic01.jpg" alt="Grocery Heartbeat" /></a>
-                <h3>Grocery Heartbeat (GenAI)</h3>
-                <p>Natural-language analytics for business users; reduced manual analysis by <strong>60%</strong>. Stack: LLM prompts, Snowflake semantic layer, Databricks jobs.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#ghb" class="button">Case Study</a></li>
-                  <li><a href="#" class="button primary icon solid fa-external-link-alt">Demo</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="generic.html#fraud" class="image"><img src="images/pic02.jpg" alt="Fraud Precision" /></a>
-                <h3>Fraud Precision Framework</h3>
-                <p>Rule-cuts + monitoring to reach <strong>90%</strong> precision; saved <strong>500+ hrs/month</strong>. Methods: uplift/deciles, cohort back-tests.</p>
-                <ul class="actions">
-                  <li><a href="generic.html#fraud" class="button">Case Study</a></li>
-                </ul>
-              </article>
-            </div>
-
-            <!-- Experience Timeline Item -->
-            <hr class="major" />
-            <h2 id="timeline">Experience Timeline Item</h2>
-            <div class="box">
-              <h3 style="margin-bottom:.25rem;">
-                <span class="icon solid fa-chart-line" style="margin-right:.4rem;"></span>Amazon — BIE II
-              </h3>
-              <p style="color:#888; margin:0 0 .75rem;">Aug 2025 – Present · Bengaluru, India</p>
-              <ul style="margin:0;">
-                <li>Built <strong>GenAI analytics</strong> and unified grocery metrics (Fresh, WFM, SSD) — improved decision accuracy by <strong>15–25%</strong>.</li>
-                <li>Led <strong>Grocery Heartbeat</strong> — <strong>60%</strong> less manual analysis across 5+ teams.</li>
-                <li>Placed <strong>5th</strong> globally in Amazon Hackathon 2025 (72 teams; 16 finalists).</li>
-              </ul>
-              <ul class="actions" style="margin-top:.75rem;">
-                <li><a href="generic.html#amazon" class="button small">Full role</a></li>
-              </ul>
-            </div>
-
-            <!-- Metric Chips / Badges -->
-            <hr class="major" />
-            <h2 id="badges">Metric Chips</h2>
-            <p>Use these small highlights inline under a heading or inside cards.</p>
-            <p>
-              <span class="button small primary">+60% Faster Analysis</span>
-              <span class="button small">90% Precision</span>
-              <span class="button small">+5K iOPD</span>
-              <span class="button small">15–25% Better Decisions</span>
-            </p>
-
-            <!-- Skills / Tech Tags -->
-            <hr class="major" />
-            <h2 id="tags">Skill Tags</h2>
-            <p>
-              <span class="button small fit" style="max-width:unset;">Python</span>
-              <span class="button small fit" style="max-width:unset;">SQL</span>
-              <span class="button small fit" style="max-width:unset;">Databricks</span>
-              <span class="button small fit" style="max-width:unset;">Snowflake</span>
-              <span class="button small fit" style="max-width:unset;">Redshift</span>
-              <span class="button small fit" style="max-width:unset;">Tableau</span>
-              <span class="button small fit" style="max-width:unset;">Quicksight</span>
-              <span class="button small fit" style="max-width:unset;">Experimentation</span>
-            </p>
-
-            <!-- Case Study Callout -->
-            <hr class="major" />
-            <h2 id="callout">Case Study Callout</h2>
-            <div class="box">
-              <h3><span class="icon solid fa-robot" style="margin-right:.4rem;"></span>Grocery Heartbeat — GenAI Insights</h3>
-              <p>
-                Business users ask questions in natural language and receive charts + narrative explanations. Reduced WBR prep time and ad-hoc analysis by <strong>60%</strong>.
-              </p>
-              <ul>
-                <li>Prompt-orchestration + Snowflake semantic layer</li>
-                <li>Databricks ETL, Quicksight visual layer</li>
-              </ul>
-              <ul class="actions">
-                <li><a href="generic.html#ghb" class="button primary">Read the case study</a></li>
-                <li><a href="#" class="button icon solid fa-external-link-alt">Demo</a></li>
-              </ul>
-            </div>
-
-            <!-- Two-Column Role Summary -->
-            <hr class="major" />
-            <h2 id="two-col">Two-Column Role Summary</h2>
-            <div class="row">
-              <div class="col-6 col-12-small">
-                <h3><span class="icon solid fa-bolt" style="margin-right:.4rem;"></span>Swiggy — Bolt</h3>
-                <p>Core team for <em>10-minute delivery</em>. Built zone readiness models and optimized batching → +2% M2O, +1.8K iOPD.</p>
-                <ul class="actions"><li><a href="generic.html#bolt" class="button small">Learn more</a></li></ul>
-              </div>
-              <div class="col-6 col-12-small">
-                <h3><span class="icon solid fa-shield-alt" style="margin-right:.4rem;"></span>Swiggy — Trust & Safety</h3>
-                <p>Fraud rule precision to <strong>90%</strong>; automated escalations, saving <strong>500+ hrs/month</strong>. −30% false tagging.</p>
-                <ul class="actions"><li><a href="generic.html#tns" class="button small">Learn more</a></li></ul>
-              </div>
-            </div>
-
-            <!-- CTA Row -->
-            <hr class="major" />
-            <h2 id="cta">CTA Row</h2>
-            <ul class="actions">
-              <li><a href="Rohan_Poddar_Data_Scientist.pdf" class="button primary icon solid fa-download">Download CV</a></li>
-              <li><a href="index.html#projects" class="button">View Projects</a></li>
-              <li><a href="mailto:rohanratna23@gmail.com" class="button icon solid fa-envelope">Email Me</a></li>
-            </ul>
-
-            <!-- Contact Form (kept minimal) -->
-            <hr class="major" />
-            <h2 id="contact">Contact Form</h2>
-            <form method="post" action="#" onsubmit="alert('Thanks! This is a static demo. Connect a backend to receive emails.'); return false;">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <input type="email" name="email" id="email" placeholder="Email" />
-                </div>
-                <div class="col-12">
-                  <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
-                </div>
-                <div class="col-12">
-                  <ul class="actions">
-                    <li><input type="submit" value="Send Message" class="primary" /></li>
-                    <li><input type="reset" value="Reset" /></li>
-                  </ul>
-                </div>
-              </div>
-            </form>
-
-          </section>
-
+    <main>
+      <section class="resume-hero">
+        <div>
+          <p class="eyebrow">Resume</p>
+          <h1>Data Scientist with a marketplace, ML, and experimentation spine.</h1>
+          <p>
+            Focused on practical data science: causal measurement, feature engineering, GenAI workflows, operational
+            analytics, and clear business storytelling.
+          </p>
         </div>
-      </div>
+        <a class="button primary" href="Rohan%20Poddar%20-%20Resume.pdf" target="_blank" rel="noreferrer noopener">Download PDF</a>
+      </section>
 
-      <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
+      <section class="resume-grid">
+        <article>
+          <h2>Technical Skills</h2>
+          <div class="skill-cloud compact">
+            <span>Python</span><span>Advanced SQL</span><span>PySpark</span><span>Data Structures</span>
+            <span>Statistical Modeling</span><span>Supervised Learning</span><span>Ensemble Models</span>
+            <span>Feature Engineering</span><span>Model Validation</span><span>Forecasting</span>
+            <span>Experiment Design</span><span>A/B Testing</span><span>Hypothesis Testing</span>
+            <span>Causal Inference</span><span>Uplift Modeling</span><span>Product Analytics</span>
+            <span>Marketplace Analytics</span><span>Personalization</span><span>GenAI Applications</span>
+            <span>LLM Evaluation</span><span>Prompt Engineering</span><span>Workflow Orchestration</span>
+            <span>AWS S3</span><span>Lambda</span><span>Step Functions</span><span>SageMaker</span>
+            <span>Snowflake</span><span>Redshift</span><span>Tableau</span><span>QuickSight</span>
+          </div>
+        </article>
 
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="get" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
+        <article>
+          <h2>Achievements</h2>
+          <ul class="clean-list">
+            <li>Secured 5th place globally in Amazon's 2025 Hackathon among 72 teams.</li>
+            <li>MAD Award at Swiggy for exceptional business impact and analytics-driven solutions.</li>
+            <li>Significant Development Award at KMK Consulting for automation and reporting efficiency.</li>
+            <li>Values & Behavior Awards at KMK Consulting: Peak Performance and Personal Accountability.</li>
+            <li>GATE 2021 CSE: All India Rank 5307 out of 1.2L+ candidates.</li>
+          </ul>
+        </article>
 
-          <!-- Menu -->
-          <nav id="menu">
-            <header class="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="index.html">Home</a></li>
+        <article>
+          <h2>Education</h2>
+          <p><strong>UEM, Jaipur</strong><br />B.Tech in Computer Science & Engineering<br />Jul 2017 - Jun 2021</p>
+        </article>
 
-              <li>
-                <span class="opener">Experience</span>
-                <ul>
-                  <li><a href="generic.html#amazon">Amazon</a></li>
-                  <li><a href="generic.html#bolt">Swiggy — Bolt</a></li>
-                  <li><a href="generic.html#tns">Swiggy — Trust & Safety</a></li>
-                  <li><a href="generic.html#kmk">KMK Consulting</a></li>
-                </ul>
-              </li>
+        <article>
+          <h2>Contact</h2>
+          <ul class="clean-list">
+            <li><a href="mailto:rohanratna23@gmail.com">rohanratna23@gmail.com</a></li>
+            <li><a href="tel:+918278658366">+91 82786 58366</a></li>
+            <li><a href="https://linkedin.com/in/rohan-poddar/" target="_blank" rel="noreferrer noopener">linkedin.com/in/rohan-poddar</a></li>
+            <li><a href="https://rorat23.github.io/rohan-portfolio/" target="_blank" rel="noreferrer noopener">rorat23.github.io/rohan-portfolio</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
-              <li>
-                <span class="opener">Projects</span>
-                <ul>
-                  <li><a href="generic.html#ghb">Grocery Heartbeat (GenAI)</a></li>
-                  <li><a href="generic.html#fraud">Fraud Precision Framework</a></li>
-                  <li><a href="generic.html#pricing">Pricing & Parity Analytics</a></li>
-                </ul>
-              </li>
-
-              <li><a href="index.html#projects">Featured Work</a></li>
-              <li><a href="elements.html">Components</a></li>
-              <li><a href="mailto:rohanratna23@gmail.com">Contact</a></li>
-            </ul>
-          </nav>
-
-
-          <!-- Contact -->
-          <section>
-            <header class="major"><h2>Get in touch</h2></header>
-            <ul class="contact">
-              <li class="icon solid fa-envelope"><a href="mailto:rohanratna23@gmail.com">rohanratna23@gmail.com</a></li>
-              <li class="icon solid fa-phone"><a href="tel:+918278658366">+91 82786 58366</a></li>
-              <li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/rohan-poddar/" target="_blank" rel="noreferrer noopener">linkedin.com/in/rohan-poddar/</a></li>
-              <li class="icon solid fa-map-marker-alt">Bengaluru, India</li>
-            </ul>
-          </section>
-
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">
-              &copy; Rohan Poddar. Template: <a href="https://html5up.net">HTML5 UP</a>.
-            </p>
-          </footer>
-
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer class="site-footer">
+      <span>&copy; Rohan Poddar</span>
+      <span>Bengaluru, India</span>
+    </footer>
   </body>
 </html>
